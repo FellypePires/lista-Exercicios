@@ -1,0 +1,23 @@
+:root { --fundo: #f3f5f1; --texto: #18231f; --suave: #66736d; --linha: #e1e7e1; --verde: #176b55; --escuro: #10221f; --lima: #d6f27c; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fundo); color: var(--texto); font-family: Arial, sans-serif; line-height: 1.5; }
+.topo { padding: 42px max(20px, calc((100% - 1100px) / 2)); background: var(--escuro); color: white; }
+.topo a { display: inline-block; margin-bottom: 18px; color: var(--lima); }
+.topo p { margin: 0 0 8px; color: #c7d3cd; }
+.topo h1 { margin: 0; font-size: clamp(2rem, 4vw, 3rem); }
+main { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; width: min(1100px, calc(100% - 32px)); margin: 36px auto 60px; align-items: start; }
+.cartao { padding: 22px; border: 1px solid var(--linha); border-radius: 9px; background: white; }
+.cartao-topo { display: flex; justify-content: space-between; margin-bottom: 10px; color: var(--verde); font-size: .75rem; font-weight: bold; letter-spacing: .1em; }
+h2 { margin: 0; font-size: 1.25rem; }
+.descricao { margin: 8px 0 16px; color: var(--suave); font-size: .9rem; }
+.campos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-bottom: 14px; }
+.campos.quatro { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+label { display: grid; gap: 5px; color: #33443c; font-size: .82rem; font-weight: bold; }
+input, select { width: 100%; min-width: 0; min-height: 42px; padding: 9px 10px; border: 1px solid #d7dfd9; border-radius: 6px; background: #fcfdfb; color: var(--texto); font: inherit; font-size: .9rem; }
+input:focus, select:focus { outline: 2px solid rgba(23, 107, 85, .22); border-color: var(--verde); }
+button { min-height: 40px; padding: 9px 15px; border: 0; border-radius: 6px; background: var(--verde); color: white; font: inherit; font-size: .86rem; font-weight: bold; cursor: pointer; }
+button:hover { background: #105641; }
+.resultado { display: block; margin-top: 14px; padding: 12px; border-left: 3px solid var(--verde); background: #eff7f1; color: #1e4034; font-size: .9rem; white-space: pre-line; }
+.resultado[hidden] { display: none; }
+@media (max-width: 720px) { main { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .campos, .campos.quatro { grid-template-columns: 1fr; } }

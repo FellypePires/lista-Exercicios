@@ -1,0 +1,25 @@
+:root {
+    --fundo: #f3f5f1;
+    --texto: #18231f;
+    --suave: #66736d;
+    --linha: #e1e7e1;
+    --verde: #176b55;
+    --escuro: #10221f;
+    --lima: #d6f27c;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fundo); color: var(--texto); font-family: Arial, sans-serif; line-height: 1.5; }
+.topo { padding: 54px max(22px, calc((100% - 1000px) / 2)); background: var(--escuro); color: white; }
+.identificacao { margin: 0 0 10px; color: var(--lima); font-size: .72rem; font-weight: bold; letter-spacing: .12em; }
+h1 { margin: 0; font-size: clamp(2.5rem, 6vw, 4rem); }
+.topo > p:last-child { margin: 10px 0 0; color: #c7d3cd; }
+main { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; width: min(1000px, calc(100% - 32px)); margin: 44px auto 64px; }
+.atividade { display: block; padding: 22px; border: 1px solid var(--linha); border-radius: 9px; background: white; color: inherit; text-decoration: none; }
+.atividade:hover { border-color: #a8c9b4; }
+.numero { color: var(--verde); font-size: .72rem; font-weight: bold; letter-spacing: .1em; }
+h2 { margin: 10px 0 8px; font-size: 1.25rem; }
+.atividade p { min-height: 48px; margin: 0 0 16px; color: var(--suave); font-size: .9rem; }
+.acao { color: var(--verde); font-size: .86rem; font-weight: bold; }
+footer { padding: 18px; background: #e8ede8; color: var(--suave); text-align: center; font-size: .8rem; }
+@media (max-width: 760px) { main { grid-template-columns: 1fr; } .atividade p { min-height: 0; } }

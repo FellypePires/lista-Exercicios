@@ -1,0 +1,40 @@
+* { box-sizing: border-box; }
+body { margin: 0; padding: 30px 16px; font-family: Arial, sans-serif; }
+.cidade { width: 600px; max-width: 100%; margin: 0 auto; border-spacing: 2px; border: 0; font-size: 12px; }
+.cidade th, .cidade td { padding: 2px; }
+.cidade .titulo { background: #0d5188; color: white; font-weight: bold; text-align: center; }
+.cidade .colunas th { background: #66c5e3; color: #0d5188; font-weight: bold; text-align: left; }
+.cidade .posicao { width: 10%; background: #c7e7f3; text-align: center; font-weight: normal; }
+.cidade .nome { width: 25%; color: #0d5188; font-weight: bold; }
+.cidade .populacao { width: 15%; background: #c7e7f3; text-align: right; font-weight: normal; white-space: nowrap; }
+.classificacao-wrap { width: 100%; overflow-x: auto; }
+.classificacao { width: 600px; margin: 0 auto; border: 1px solid #ddd; border-collapse: collapse; table-layout: fixed; font-size: 14px; }
+.classificacao col.posicao { width: 34px; }
+.classificacao col.time { width: 166px; }
+.classificacao col.dado { width: 43px; }
+.classificacao col.aproveitamento { width: 56px; }
+.classificacao th, .classificacao td { height: 29px; padding: 4px 5px; border-bottom: 1px solid #ddd; text-align: center; }
+.classificacao thead th { height: 30px; color: #999; font-size: 13px; font-weight: bold; }
+.classificacao .time { color: #666; font-size: 14px; font-weight: bold; text-align: left; }
+.classificacao .pontos { background: #f7f7f7; color: #000; font-weight: bold; }
+.classificacao .dado { color: #666; font-weight: normal; }
+.classificacao .fundo { background: #f7f7f7; }
+.classificacao .pos { font-size: 18px; font-weight: bold; text-align: center; }
+.classificacao .cinza { color: #ccc; }
+.classificacao .libertadores { color: #003366; }
+.classificacao .pre-libertadores { color: #1398be; }
+.classificacao .sul-americana { color: #de9800; }
+.classificacao .rebaixado { color: #c91b04; }
+.amostra.libertadores { background: #003366; }
+.amostra.pre-libertadores { background: #1398be; }
+.amostra.sul-americana { background: #de9800; }
+.amostra.rebaixado { background: #c91b04; }
+.classificacao tbody tr:nth-child(4) td { border-bottom: 2px solid #ccc; }
+.classificacao tbody tr:nth-child(16) td { border-bottom: 2px solid #ccc; }
+.classificacao tfoot td { padding: 3px 5px; border: 0; color: #555; font-size: 10px; font-weight: normal; text-align: left; white-space: nowrap; }
+.legendas { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 3px; color: #8f8f8f; font-size: 10px; }
+.legendas span { display: inline-flex; align-items: center; gap: 4px; }
+.amostra { width: 9px; height: 9px; display: inline-block; border-radius: 1px; }
+.legenda-dados { color: #555; font-size: 10px; }
+.legenda-dados strong { font-weight: bold; }
+@media (max-width: 640px) { body { padding: 16px 8px; } .cidade { margin: 0 auto; } }

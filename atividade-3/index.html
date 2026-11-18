@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3 · Exercícios de JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="topo">
+        <a href="../index.html">← Voltar para a Lista 2</a>
+        <p>ATIVIDADE 3 · 2º BIMESTRE</p>
+        <h1>Exercícios de JavaScript</h1>
+    </header>
+    <main>
+        <section class="cartao">
+            <div class="cartao-topo"><span>EXERCÍCIO 01</span></div>
+            <h2>Cotação do dólar</h2><p class="descricao">Veja o valor da cotação após aumentos de 1%, 2%, 5% e 10%.</p>
+            <form id="form1"><div class="campos"><label>Cotação atual (R$)<input name="cotacao" type="number" min="0.01" step="any" required></label></div><button type="submit">Calcular</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <div class="cartao-topo"><span>EXERCÍCIO 02</span></div>
+            <h2>Ingredientes da omelete</h2><p class="descricao">Calcule 2 ovos e 50 gramas de queijo por pessoa.</p>
+            <form id="form2"><div class="campos"><label>Quantidade de pessoas<input name="pessoas" type="number" min="1" step="1" required></label></div><button type="submit">Calcular ingredientes</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <div class="cartao-topo"><span>EXERCÍCIO 03</span></div>
+            <h2>Operações matemáticas</h2><p class="descricao">Informe dois números inteiros para calcular as operações principais.</p>
+            <form id="form3"><div class="campos"><label>Primeiro número<input name="numero1" type="number" step="1" required></label><label>Segundo número<input name="numero2" type="number" step="1" required></label></div><button type="submit">Calcular operações</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <div class="cartao-topo"><span>EXERCÍCIO 04</span></div>
+            <h2>Pedido de pizza</h2><p class="descricao">Cada sabor custa R$ 12,00 e cada refrigerante custa R$ 7,00.</p>
+            <form id="form4"><div class="campos quatro"><label>Primeiro sabor<input name="sabor1" type="text" required></label><label>Segundo sabor<input name="sabor2" type="text" required></label><label>Terceiro sabor<input name="sabor3" type="text" required></label><label>Quarto sabor<input name="sabor4" type="text" required></label><label>Quantidade de refrigerantes<input name="refrigerantes" type="number" min="0" step="1" required></label></div><button type="submit">Calcular pedido</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <div class="cartao-topo"><span>EXERCÍCIO 05</span></div>
+            <h2>Idade de três pessoas</h2><p class="descricao">Informe os nomes e os anos de nascimento para ordenar da pessoa mais velha à mais nova.</p>
+            <form id="form5"><div class="campos"><label>Nome da primeira pessoa<input name="nome1" type="text" required></label><label>Ano de nascimento<input name="ano1" type="number" min="1" max="2026" step="1" required></label><label>Nome da segunda pessoa<input name="nome2" type="text" required></label><label>Ano de nascimento<input name="ano2" type="number" min="1" max="2026" step="1" required></label><label>Nome da terceira pessoa<input name="nome3" type="text" required></label><label>Ano de nascimento<input name="ano3" type="number" min="1" max="2026" step="1" required></label></div><button type="submit">Ordenar por idade</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <div class="cartao-topo"><span>EXERCÍCIO 06</span></div>
+            <h2>Nota final</h2><p class="descricao">Confira se o aluno foi aprovado, precisa de substitutiva ou foi reprovado.</p>
+            <form id="form6"><div class="campos"><label>Nota final (0 a 10)<input name="nota" type="number" min="0" max="10" step="any" required></label></div><button type="submit">Ver resultado</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <div class="cartao-topo"><span>EXERCÍCIO 07</span></div>
+            <h2>Comparação de números</h2><p class="descricao">Descubra se o primeiro número é maior, menor ou igual ao segundo.</p>
+            <form id="form7"><div class="campos"><label>Primeiro número<input name="numero1" type="number" step="1" required></label><label>Segundo número<input name="numero2" type="number" step="1" required></label></div><button type="submit">Comparar</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <div class="cartao-topo"><span>EXERCÍCIO 08</span></div>
+            <h2>Divisão de turmas</h2><p class="descricao">Veja quantas pessoas ficam em cada turma e quantas sobram.</p>
+            <form id="form8"><div class="campos"><label>Quantidade de alunos<input name="alunos" type="number" min="0" step="1" required></label><label>Quantidade de turmas<input name="turmas" type="number" min="1" step="1" required></label></div><button type="submit">Dividir turmas</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+        <section class="cartao">
+            <div class="cartao-topo"><span>EXERCÍCIO 09</span></div>
+            <h2>Metas de vendas</h2><p class="descricao">Compare as vendas com a meta e a meta mínima do mês.</p>
+            <form id="form9"><div class="campos"><label>Valor vendido (R$)<input name="vendido" type="number" min="0" step="any" required></label><label>Meta do mês (R$)<input name="meta" type="number" min="0.01" step="any" required></label><label>Meta mínima (R$)<input name="metaMinima" type="number" min="0.01" step="any" required></label></div><button type="submit">Calcular metas</button></form>
+            <output class="resultado" aria-live="polite" hidden></output>
+        </section>
+    </main>
+</body>
+</html>
